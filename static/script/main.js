@@ -1,4 +1,9 @@
-const pt = document.getElementById("ptable");
+const
+    pt = document.getElementById("ptable"),
+    nc = document.getElementById("stats-ncorrect"),
+    nt = document.getElementById("stats-ntotal"),
+    pc = document.getElementById("stats-pcorrect");
+
 let cells = [];
 
 function splitRow(row) {
@@ -92,14 +97,18 @@ const questionTypes = Object.freeze([
 ]);
 
 let index = 0;
+let correct = 0;
+let locked = false;
 
 async function newQuestion(data) {
+    index++;
+
     const qn = document.getElementById("qnum");
     const qc = document.getElementById("qcontent");
 
     const type = questionTypes[Math.floor(Math.random() * questionTypes.length)];
 
-    qn.innerHTML = (index + 1).toString();
+    qn.innerHTML = index.toString();
     const content = type(
         {
             data
@@ -126,13 +135,22 @@ async function newQuestion(data) {
 
             for (const button of qc.querySelectorAll(".qans > a")) {
                 button.addEventListener("click", () => {
+                    if (locked) return;
+                    locked = true;
                     const correctIndex = choices.indexOf(content.answer);
                     if (parseInt(button.getAttribute("data-index")) === correctIndex) {
+                        ++correct;
                         button.classList.add("correct");
                     } else {
                         button.classList.add("incorrect");
                         document.querySelector(`.qans > a[data-index='${correctIndex}']`).classList.add("correct");
                     }
+
+                    const percentage = (correct / index) * 100;
+
+                    nc.innerHTML = correct.toString();
+                    nt.innerHTML = index.toString();
+                    pc.innerHTML = `${percentage.toFixed(2)}%`;
 
                     const callbacks = [];
                     if (content.element) {
@@ -143,6 +161,7 @@ async function newQuestion(data) {
                     }
                     setTimeout(() => {
                         for (const callback of callbacks) callback();
+                        locked = false;
                         newQuestion(data);
                     }, 2000);
                 });
@@ -150,8 +169,6 @@ async function newQuestion(data) {
             break;
         }
     }
-
-    index++;
 }
 
 async function main() {

@@ -55,7 +55,6 @@ h2 {
     font-size: 28pt;
 }
 
-
 a {
     color: #0074D9;
     font-family: inherit;
@@ -79,9 +78,8 @@ footer p:last-of-type {
 
 main {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
     min-height: 500px;
 }
@@ -107,6 +105,13 @@ main.noscript {
     background-color: white;
 
     transition: opacity 0.3s ease-in 250ms;
+}
+
+#qcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #qcontent {
@@ -152,4 +157,14 @@ main.noscript {
 
 .qans a:hover {
     background-color: #EEEEEE;
+}
+
+#stats {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: max-content auto;
+}
+
+#stats .header {
+    font-weight: bolder;
 }

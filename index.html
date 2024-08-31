@@ -30,15 +30,27 @@
 
     <main class="noscript">
         <div id="qcontainer">
-            <h3 id="qhead">Question <span id="qnum">1</span>.</h3>
-            <div id="qcontent"></div>
+            <div id="qprimary">
+                <h3 id="qhead">Question <span id="qnum">1</span>.</h3>
+                <div id="qcontent"></div>
+            </div>
+            <div id="qsecondary">
+            <div id="ptable">
+            </div>
+            </div>
         </div>
+        <hr/>
+        <div id="stats">
+            <div class="header">&#8470; correct:</div>
+            <div><span id="stats-ncorrect">0</span> / <span id="stats-ntotal">0</span></div>
+            <div class="header">% correct:</div>
+            <div id="stats-pcorrect">100%</div>
+        </div>
+
         <div id="load-container">
             <div id="load">
                 Loading...
             </div>
-        </div>
-        <div id="ptable">
         </div>
     </main>
 

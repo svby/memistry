@@ -38,9 +38,12 @@ async function loadData() {
 
     return {
         elements: elements,
+        zs: [...new Array(118).keys()].map(e => e + 1),
+        names: [...new Set(elements.map(e => e["Element"]).filter(e => e !== null))],
         groups: [...new Set(elements.map(e => e["Group"]).filter(e => e !== null))],
         periods: [...new Set(elements.map(e => e["Period"]).filter(e => e !== null))],
-        types: [...new Set(elements.map(e => e["Type"]).filter(e => e !== null))]
+        types: [...new Set(elements.map(e => e["Type"]).filter(e => e !== null))],
+        symbols: [...new Set(elements.map(e => e["Symbol"]).filter(e => e !== null))]
     };
 }
 
@@ -55,7 +58,7 @@ function generateMcChoices(options, answer) {
 }
 
 function groupQuestion(options) {
-    const element = Math.floor(Math.random() * (options.data.elements.length - 1)) + 1;
+    const element = _.sample(options.data.zs);
 
     return {
         type: "mc",
@@ -67,7 +70,7 @@ function groupQuestion(options) {
 }
 
 function periodQuestion(options) {
-    const element = Math.floor(Math.random() * (options.data.elements.length - 1)) + 1;
+    const element = _.sample(options.data.zs);
 
     return {
         type: "mc",
@@ -79,7 +82,7 @@ function periodQuestion(options) {
 }
 
 function typeQuestion(options) {
-    const element = Math.floor(Math.random() * (options.data.elements.length - 1)) + 1;
+    const element = _.sample(options.data.zs);
 
     return {
         type: "mc",
@@ -90,10 +93,54 @@ function typeQuestion(options) {
     };
 }
 
+function zQuestion(options) {
+    const element = _.sample(options.data.zs);
+    const text = _.sample([
+        `How many protons are present in an atom of <b>${options.data.elements[element]["Element"]}</b>?`,
+        `How many electrons are present in an atom of <b>${options.data.elements[element]["Element"]}</b>?`,
+        `What is the atomic number of the element <b>${options.data.elements[element]["Element"]}</b>?`
+    ]);
+
+    return {
+        type: "mc",
+        element,
+        text,
+        options: options.data.zs,
+        answer: element
+    };
+}
+
+function symbolQuestion(options) {
+    const element = _.sample(options.data.zs);
+
+    return {
+        type: "mc",
+        element,
+        text: `What is the symbol of the element <b>${options.data.elements[element]["Element"]}</b>?`,
+        options: options.data.symbols,
+        answer: options.data.elements[element]["Symbol"]
+    };
+}
+
+function elementQuestion(options) {
+    const element = _.sample(options.data.zs);
+
+    return {
+        type: "mc",
+        element,
+        text: `Which element has the symbol <b>${options.data.elements[element]["Symbol"]}</b>?`,
+        options: options.data.names,
+        answer: options.data.elements[element]["Element"]
+    };
+}
+
 const questionTypes = Object.freeze([
     groupQuestion,
     periodQuestion,
-    typeQuestion
+    typeQuestion,
+    zQuestion,
+    symbolQuestion,
+    elementQuestion
 ]);
 
 let index = 0;
@@ -106,7 +153,7 @@ async function newQuestion(data) {
     const qn = document.getElementById("qnum");
     const qc = document.getElementById("qcontent");
 
-    const type = questionTypes[Math.floor(Math.random() * questionTypes.length)];
+    const type = _.sample(questionTypes);
 
     qn.innerHTML = index.toString();
     const content = type(

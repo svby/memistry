@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+
+    <title>stuhlmeier/memistry</title>
+
+    <link rel="stylesheet" href="/static/css/main.css">
+
+    <script src="/static/script/lodash.min.js"></script>
+    <script defer src="/static/script/main.js"></script>
+</head>
+<body>
+<div id="container">
+    <header>
+        <h1><a href="/">memistry</a></h1>
+    </header>
+
+    <hr/>
+
+    <noscript>
+        <div id="noscript-warning">
+            <b>It appears you don't have JavaScript enabled in your browser.</b>
+            The functionality of this site may be severely restricted.
+        </div>
+    </noscript>
+
+    <main class="noscript">
+        <div id="qcontainer">
+            <h3 id="qhead">Question <span id="qnum">1</span>.</h3>
+            <div id="qcontent"></div>
+        </div>
+        <div id="load-container">
+            <div id="load">
+                Loading...
+            </div>
+        </div>
+    </main>
+
+    <script>
+        for (const e of document.querySelectorAll(".noscript")) {
+            e.classList.remove("noscript");
+        }
+    </script>
+
+    <hr/>
+
+    <footer>
+        <p>
+            &copy; 2020 <a href="https://stuhlmeier.github.io/">stuhlmeier</a>
+        </p>
+        <p>
+            Available under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License</a>.
+        </p>
+    </footer>
+</div>
+</body>
+</html>

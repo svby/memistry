@@ -1,0 +1,62 @@
+#ptable {
+    display: grid;
+    grid-template-columns: auto repeat(18, 20px);
+    grid-template-rows: auto repeat(7, 20px) 10px repeat(2, 20px);
+    grid-gap: 1px 1px;
+    margin: 20px;
+}
+
+#ptable > div {
+    border: 1px solid gray;
+}
+
+#ptable > .period-header {
+    border: none;
+    text-align: center;
+    font-size: 90%;
+    margin: auto 3px;
+    line-height: 1;
+    font-family: monospace;
+}
+
+#ptable > .group-header {
+    border: none;
+    text-align: center;
+    font-size: 90%;
+    margin: 3px auto;
+    line-height: 1;
+    font-family: monospace;
+}
+
+#ptable > .la-ac-placeholder {
+    grid-row: 7 / 9;
+    grid-column: 4;
+
+    border: none;
+    background: repeating-linear-gradient(
+            -45deg,
+            lightgray,
+            lightgray 3px,
+            transparent 3px,
+            transparent 6px
+    );
+}
+
+#ptable > div.indicator {
+    animation: blink 800ms infinite;
+}
+
+@keyframes blink {
+    from {
+        background-color: transparent;
+    }
+    45% {
+        background-color: gray;
+    }
+    55% {
+        background-color: gray;
+    }
+    to {
+        background-color: transparent;
+    }
+}

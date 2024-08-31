@@ -1,3 +1,6 @@
+const pt = document.getElementById("ptable");
+let cells = [];
+
 function splitRow(row) {
     const trimmed = row.trim();
     if (!trimmed) return [];
@@ -51,6 +54,7 @@ function groupQuestion(options) {
 
     return {
         type: "mc",
+        element,
         text: `What group is the element <b>${options.data.elements[element]["Element"]}</b> a member of?`,
         options: options.data.groups,
         answer: options.data.elements[element]["Group"]
@@ -62,6 +66,7 @@ function periodQuestion(options) {
 
     return {
         type: "mc",
+        element,
         text: `What period is the element <b>${options.data.elements[element]["Element"]}</b> a member of?`,
         options: options.data.periods,
         answer: options.data.elements[element]["Period"]
@@ -73,6 +78,7 @@ function typeQuestion(options) {
 
     return {
         type: "mc",
+        element,
         text: `What series is the element <b>${options.data.elements[element]["Element"]}</b> a member of?`,
         options: options.data.types,
         answer: options.data.elements[element]["Type"]
@@ -120,12 +126,25 @@ async function newQuestion(data) {
 
             for (const button of qc.querySelectorAll(".qans > a")) {
                 button.addEventListener("click", () => {
-                    if (parseInt(button.getAttribute("data-index")) === choices.indexOf(content.answer)) {
-                        alert("Correct");
+                    const correctIndex = choices.indexOf(content.answer);
+                    if (parseInt(button.getAttribute("data-index")) === correctIndex) {
+                        button.classList.add("correct");
                     } else {
-                        alert(`Incorrect, the answer was ${content.answer}`);
+                        button.classList.add("incorrect");
+                        document.querySelector(`.qans > a[data-index='${correctIndex}']`).classList.add("correct");
                     }
-                    newQuestion(data);
+
+                    const callbacks = [];
+                    if (content.element) {
+                        cells[content.element].classList.add("indicator");
+                        callbacks.push(() => {
+                            cells[content.element].classList.remove("indicator")
+                        });
+                    }
+                    setTimeout(() => {
+                        for (const callback of callbacks) callback();
+                        newQuestion(data);
+                    }, 2000);
                 });
             }
             break;
@@ -138,6 +157,8 @@ async function newQuestion(data) {
 async function main() {
     const data = await loadData();
     console.log(data);
+
+    cells = populateTable(pt, data);
 
     const lc = document.getElementById("load-container");
     lc.style.opacity = "0";

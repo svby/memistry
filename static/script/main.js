@@ -130,11 +130,11 @@ async function newQuestion(data) {
 
                     snc.innerHTML = correct.toString();
                     snt.innerHTML = index.toString();
-                    spc.innerHTML = `${((correct / index) * 100).toFixed(2)}%`;
+                    spc.innerHTML = `${((correct / index) * 100).toFixed(0)}%`;
 
                     tnc.innerHTML = globalTotalCorrect.toString();
                     tnt.innerHTML = globalTotal.toString();
-                    tpc.innerHTML = `${((globalTotalCorrect / globalTotal) * 100).toFixed(2)}%`;
+                    tpc.innerHTML = `${((globalTotalCorrect / globalTotal) * 100).toFixed(0)}%`;
 
                     const callbacks = [];
                     if (content.element) {
@@ -161,7 +161,7 @@ async function main() {
 
     tnc.innerHTML = globalTotalCorrect.toString();
     tnt.innerHTML = globalTotal.toString();
-    tpc.innerHTML = `${((globalTotalCorrect / globalTotal) * 100).toFixed(2)}%`;
+    tpc.innerHTML = `${((globalTotal === 0 ? 1 : (globalTotalCorrect / globalTotal)) * 100).toFixed(0)}%`;
 
     const data = await loadData();
     console.log(data);

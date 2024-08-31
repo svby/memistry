@@ -11,7 +11,7 @@ function splitRow(row) {
 }
 
 async function loadData() {
-    const response = await fetch("/static/goodman.csv");
+    const response = await fetch("static/goodman.csv");
     const raw = await response.text();
 
     const lines = raw.split("\n");

@@ -25,6 +25,10 @@ function groupQuestion(options) {
     return {
         type: "mc",
         element: element.z,
+        group:
+            Object.values(options.data)
+                .filter(e => e.group === element.group)
+                .map(e => e.z),
         text,
         options:
             _(Object.values(options.data))
@@ -46,6 +50,10 @@ function periodQuestion(options) {
     return {
         type: "mc",
         element: element.z,
+        group:
+            Object.values(options.data)
+                .filter(e => e.period === element.period)
+                .map(e => e.z),
         text,
         options: _(Object.values(options.data)).map(e => e.period).uniq().value(),
         answer: element.period

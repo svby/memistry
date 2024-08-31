@@ -1,0 +1,1716 @@
+{
+  "1": {
+    "z": 1,
+    "n": 0,
+    "name": "hydrogen",
+    "symbol": "H",
+    "mass": 1.007,
+    "period": 1,
+    "group": 1,
+    "electronegativity": 2.2,
+    "radius": 0.79,
+    "types": []
+  },
+  "2": {
+    "z": 2,
+    "n": 2,
+    "name": "helium",
+    "symbol": "He",
+    "mass": 4.002,
+    "period": 1,
+    "group": 18,
+    "electronegativity": null,
+    "radius": 0.49,
+    "types": [
+      "noble_gas"
+    ]
+  },
+  "3": {
+    "z": 3,
+    "n": 4,
+    "name": "lithium",
+    "symbol": "Li",
+    "mass": 6.941,
+    "period": 2,
+    "group": 1,
+    "electronegativity": 0.98,
+    "radius": 2.1,
+    "types": [
+      "alkali",
+      "metal"
+    ]
+  },
+  "4": {
+    "z": 4,
+    "n": 5,
+    "name": "beryllium",
+    "symbol": "Be",
+    "mass": 9.012,
+    "period": 2,
+    "group": 2,
+    "electronegativity": 1.57,
+    "radius": 1.4,
+    "types": [
+      "alkaline_earth",
+      "metal"
+    ]
+  },
+  "5": {
+    "z": 5,
+    "n": 6,
+    "name": "boron",
+    "symbol": "B",
+    "mass": 10.811,
+    "period": 2,
+    "group": 13,
+    "electronegativity": 2.04,
+    "radius": 1.2,
+    "types": [
+      "metalloid"
+    ]
+  },
+  "6": {
+    "z": 6,
+    "n": 6,
+    "name": "carbon",
+    "symbol": "C",
+    "mass": 12.011,
+    "period": 2,
+    "group": 14,
+    "electronegativity": 2.55,
+    "radius": 0.91,
+    "types": []
+  },
+  "7": {
+    "z": 7,
+    "n": 7,
+    "name": "nitrogen",
+    "symbol": "N",
+    "mass": 14.007,
+    "period": 2,
+    "group": 15,
+    "electronegativity": 3.04,
+    "radius": 0.75,
+    "types": []
+  },
+  "8": {
+    "z": 8,
+    "n": 8,
+    "name": "oxygen",
+    "symbol": "O",
+    "mass": 15.999,
+    "period": 2,
+    "group": 16,
+    "electronegativity": 3.44,
+    "radius": 0.65,
+    "types": []
+  },
+  "9": {
+    "z": 9,
+    "n": 10,
+    "name": "fluorine",
+    "symbol": "F",
+    "mass": 18.998,
+    "period": 2,
+    "group": 17,
+    "electronegativity": 3.98,
+    "radius": 0.57,
+    "types": [
+      "halogen"
+    ]
+  },
+  "10": {
+    "z": 10,
+    "n": 10,
+    "name": "neon",
+    "symbol": "Ne",
+    "mass": 20.18,
+    "period": 2,
+    "group": 18,
+    "electronegativity": null,
+    "radius": 0.51,
+    "types": [
+      "noble_gas"
+    ]
+  },
+  "11": {
+    "z": 11,
+    "n": 12,
+    "name": "sodium",
+    "symbol": "Na",
+    "mass": 22.99,
+    "period": 3,
+    "group": 1,
+    "electronegativity": 0.93,
+    "radius": 2.2,
+    "types": [
+      "alkali",
+      "metal"
+    ]
+  },
+  "12": {
+    "z": 12,
+    "n": 12,
+    "name": "magnesium",
+    "symbol": "Mg",
+    "mass": 24.305,
+    "period": 3,
+    "group": 2,
+    "electronegativity": 1.31,
+    "radius": 1.7,
+    "types": [
+      "alkaline_earth",
+      "metal"
+    ]
+  },
+  "13": {
+    "z": 13,
+    "n": 14,
+    "name": "aluminum",
+    "symbol": "Al",
+    "mass": 26.982,
+    "period": 3,
+    "group": 13,
+    "electronegativity": 1.61,
+    "radius": 1.8,
+    "types": [
+      "metal"
+    ]
+  },
+  "14": {
+    "z": 14,
+    "n": 14,
+    "name": "silicon",
+    "symbol": "Si",
+    "mass": 28.086,
+    "period": 3,
+    "group": 14,
+    "electronegativity": 1.9,
+    "radius": 1.5,
+    "types": [
+      "metalloid"
+    ]
+  },
+  "15": {
+    "z": 15,
+    "n": 16,
+    "name": "phosphorus",
+    "symbol": "P",
+    "mass": 30.974,
+    "period": 3,
+    "group": 15,
+    "electronegativity": 2.19,
+    "radius": 1.2,
+    "types": []
+  },
+  "16": {
+    "z": 16,
+    "n": 16,
+    "name": "sulfur",
+    "symbol": "S",
+    "mass": 32.065,
+    "period": 3,
+    "group": 16,
+    "electronegativity": 2.58,
+    "radius": 1.1,
+    "types": []
+  },
+  "17": {
+    "z": 17,
+    "n": 18,
+    "name": "chlorine",
+    "symbol": "Cl",
+    "mass": 35.453,
+    "period": 3,
+    "group": 17,
+    "electronegativity": 3.16,
+    "radius": 0.97,
+    "types": [
+      "halogen"
+    ]
+  },
+  "18": {
+    "z": 18,
+    "n": 22,
+    "name": "argon",
+    "symbol": "Ar",
+    "mass": 39.948,
+    "period": 3,
+    "group": 18,
+    "electronegativity": null,
+    "radius": 0.88,
+    "types": [
+      "noble_gas"
+    ]
+  },
+  "19": {
+    "z": 19,
+    "n": 20,
+    "name": "potassium",
+    "symbol": "K",
+    "mass": 39.098,
+    "period": 4,
+    "group": 1,
+    "electronegativity": 0.82,
+    "radius": 2.8,
+    "types": [
+      "alkali",
+      "metal"
+    ]
+  },
+  "20": {
+    "z": 20,
+    "n": 20,
+    "name": "calcium",
+    "symbol": "Ca",
+    "mass": 40.078,
+    "period": 4,
+    "group": 2,
+    "electronegativity": 1.0,
+    "radius": 2.2,
+    "types": [
+      "alkaline_earth",
+      "metal"
+    ]
+  },
+  "21": {
+    "z": 21,
+    "n": 24,
+    "name": "scandium",
+    "symbol": "Sc",
+    "mass": 44.956,
+    "period": 4,
+    "group": 3,
+    "electronegativity": 1.36,
+    "radius": 2.1,
+    "types": [
+      "transition",
+      "metal"
+    ]
+  },
+  "22": {
+    "z": 22,
+    "n": 26,
+    "name": "titanium",
+    "symbol": "Ti",
+    "mass": 47.867,
+    "period": 4,
+    "group": 4,
+    "electronegativity": 1.54,
+    "radius": 2.0,
+    "types": [
+      "transition",
+      "metal"
+    ]
+  },
+  "23": {
+    "z": 23,
+    "n": 28,
+    "name": "vanadium",
+    "symbol": "V",
+    "mass": 50.942,
+    "period": 4,
+    "group": 5,
+    "electronegativity": 1.63,
+    "radius": 1.9,
+    "types": [
+      "transition",
+      "metal"
+    ]
+  },
+  "24": {
+    "z": 24,
+    "n": 28,
+    "name": "chromium",
+    "symbol": "Cr",
+    "mass": 51.996,
+    "period": 4,
+    "group": 6,
+    "electronegativity": 1.66,
+    "radius": 1.9,
+    "types": [
+      "transition",
+      "metal"
+    ]
+  },
+  "25": {
+    "z": 25,
+    "n": 30,
+    "name": "manganese",
+    "symbol": "Mn",
+    "mass": 54.938,
+    "period": 4,
+    "group": 7,
+    "electronegativity": 1.55,
+    "radius": 1.8,
+    "types": [
+      "transition",
+      "metal"
+    ]
+  },
+  "26": {
+    "z": 26,
+    "n": 30,
+    "name": "iron",
+    "symbol": "Fe",
+    "mass": 55.845,
+    "period": 4,
+    "group": 8,
+    "electronegativity": 1.83,
+    "radius": 1.7,
+    "types": [
+      "transition",
+      "metal"
+    ]
+  },
+  "27": {
+    "z": 27,
+    "n": 32,
+    "name": "cobalt",
+    "symbol": "Co",
+    "mass": 58.933,
+    "period": 4,
+    "group": 9,
+    "electronegativity": 1.88,
+    "radius": 1.7,
+    "types": [
+      "transition",
+      "metal"
+    ]
+  },
+  "28": {
+    "z": 28,
+    "n": 31,
+    "name": "nickel",
+    "symbol": "Ni",
+    "mass": 58.693,
+    "period": 4,
+    "group": 10,
+    "electronegativity": 1.91,
+    "radius": 1.6,
+    "types": [
+      "transition",
+      "metal"
+    ]
+  },
+  "29": {
+    "z": 29,
+    "n": 35,
+    "name": "copper",
+    "symbol": "Cu",
+    "mass": 63.546,
+    "period": 4,
+    "group": 11,
+    "electronegativity": 1.9,
+    "radius": 1.6,
+    "types": [
+      "transition",
+      "metal"
+    ]
+  },
+  "30": {
+    "z": 30,
+    "n": 35,
+    "name": "zinc",
+    "symbol": "Zn",
+    "mass": 65.38,
+    "period": 4,
+    "group": 12,
+    "electronegativity": 1.65,
+    "radius": 1.5,
+    "types": [
+      "post_transition",
+      "metal"
+    ]
+  },
+  "31": {
+    "z": 31,
+    "n": 39,
+    "name": "gallium",
+    "symbol": "Ga",
+    "mass": 69.723,
+    "period": 4,
+    "group": 13,
+    "electronegativity": 1.81,
+    "radius": 1.8,
+    "types": [
+      "post_transition",
+      "metal"
+    ]
+  },
+  "32": {
+    "z": 32,
+    "n": 41,
+    "name": "germanium",
+    "symbol": "Ge",
+    "mass": 72.64,
+    "period": 4,
+    "group": 14,
+    "electronegativity": 2.01,
+    "radius": 1.5,
+    "types": [
+      "metalloid"
+    ]
+  },
+  "33": {
+    "z": 33,
+    "n": 42,
+    "name": "arsenic",
+    "symbol": "As",
+    "mass": 74.922,
+    "period": 4,
+    "group": 15,
+    "electronegativity": 2.18,
+    "radius": 1.3,
+    "types": [
+      "metalloid"
+    ]
+  },
+  "34": {
+    "z": 34,
+    "n": 45,
+    "name": "selenium",
+    "symbol": "Se",
+    "mass": 78.96,
+    "period": 4,
+    "group": 16,
+    "electronegativity": 2.55,
+    "radius": 1.2,
+    "types": []
+  },
+  "35": {
+    "z": 35,
+    "n": 45,
+    "name": "bromine",
+    "symbol": "Br",
+    "mass": 79.904,
+    "period": 4,
+    "group": 17,
+    "electronegativity": 2.96,
+    "radius": 1.1,
+    "types": [
+      "halogen"
+    ]
+  },
+  "36": {
+    "z": 36,
+    "n": 48,
+    "name": "krypton",
+    "symbol": "Kr",
+    "mass": 83.798,
+    "period": 4,
+    "group": 18,
+    "electronegativity": null,
+    "radius": 1.0,
+    "types": [
+      "noble_gas"
+    ]
+  },
+  "37": {
+    "z": 37,
+    "n": 48,
+    "name": "rubidium",
+    "symbol": "Rb",
+    "mass": 85.468,
+    "period": 5,
+    "group": 1,
+    "electronegativity": 0.82,
+    "radius": 3.0,
+    "types": [
+      "alkali",
+      "metal"
+    ]
+  },
+  "38": {
+    "z": 38,
+    "n": 50,
+    "name": "strontium",
+    "symbol": "Sr",
+    "mass": 87.62,
+    "period": 5,
+    "group": 2,
+    "electronegativity": 0.95,
+    "radius": 2.5,
+    "types": [
+      "alkaline_earth",
+      "metal"
+    ]
+  },
+  "39": {
+    "z": 39,
+    "n": 50,
+    "name": "yttrium",
+    "symbol": "Y",
+    "mass": 88.906,
+    "period": 5,
+    "group": 3,
+    "electronegativity": 1.22,
+    "radius": 2.3,
+    "types": [
+      "transition",
+      "metal"
+    ]
+  },
+  "40": {
+    "z": 40,
+    "n": 51,
+    "name": "zirconium",
+    "symbol": "Zr",
+    "mass": 91.224,
+    "period": 5,
+    "group": 4,
+    "electronegativity": 1.33,
+    "radius": 2.2,
+    "types": [
+      "transition",
+      "metal"
+    ]
+  },
+  "41": {
+    "z": 41,
+    "n": 52,
+    "name": "niobium",
+    "symbol": "Nb",
+    "mass": 92.906,
+    "period": 5,
+    "group": 5,
+    "electronegativity": 1.6,
+    "radius": 2.1,
+    "types": [
+      "transition",
+      "metal"
+    ]
+  },
+  "42": {
+    "z": 42,
+    "n": 54,
+    "name": "molybdenum",
+    "symbol": "Mo",
+    "mass": 95.96,
+    "period": 5,
+    "group": 6,
+    "electronegativity": 2.16,
+    "radius": 2.0,
+    "types": [
+      "transition",
+      "metal"
+    ]
+  },
+  "43": {
+    "z": 43,
+    "n": 55,
+    "name": "technetium",
+    "symbol": "Tc",
+    "mass": 98.0,
+    "period": 5,
+    "group": 7,
+    "electronegativity": 1.9,
+    "radius": 2.0,
+    "types": [
+      "transition",
+      "metal"
+    ]
+  },
+  "44": {
+    "z": 44,
+    "n": 57,
+    "name": "ruthenium",
+    "symbol": "Ru",
+    "mass": 101.07,
+    "period": 5,
+    "group": 8,
+    "electronegativity": 2.2,
+    "radius": 1.9,
+    "types": [
+      "transition",
+      "metal"
+    ]
+  },
+  "45": {
+    "z": 45,
+    "n": 58,
+    "name": "rhodium",
+    "symbol": "Rh",
+    "mass": 102.906,
+    "period": 5,
+    "group": 9,
+    "electronegativity": 2.28,
+    "radius": 1.8,
+    "types": [
+      "transition",
+      "metal"
+    ]
+  },
+  "46": {
+    "z": 46,
+    "n": 60,
+    "name": "palladium",
+    "symbol": "Pd",
+    "mass": 106.42,
+    "period": 5,
+    "group": 10,
+    "electronegativity": 2.2,
+    "radius": 1.8,
+    "types": [
+      "transition",
+      "metal"
+    ]
+  },
+  "47": {
+    "z": 47,
+    "n": 61,
+    "name": "silver",
+    "symbol": "Ag",
+    "mass": 107.868,
+    "period": 5,
+    "group": 11,
+    "electronegativity": 1.93,
+    "radius": 1.8,
+    "types": [
+      "transition",
+      "metal"
+    ]
+  },
+  "48": {
+    "z": 48,
+    "n": 64,
+    "name": "cadmium",
+    "symbol": "Cd",
+    "mass": 112.411,
+    "period": 5,
+    "group": 12,
+    "electronegativity": 1.69,
+    "radius": 1.7,
+    "types": [
+      "post_transition",
+      "metal"
+    ]
+  },
+  "49": {
+    "z": 49,
+    "n": 66,
+    "name": "indium",
+    "symbol": "In",
+    "mass": 114.818,
+    "period": 5,
+    "group": 13,
+    "electronegativity": 1.78,
+    "radius": 2.0,
+    "types": [
+      "post_transition",
+      "metal"
+    ]
+  },
+  "50": {
+    "z": 50,
+    "n": 69,
+    "name": "tin",
+    "symbol": "Sn",
+    "mass": 118.71,
+    "period": 5,
+    "group": 14,
+    "electronegativity": 1.96,
+    "radius": 1.7,
+    "types": [
+      "post_transition",
+      "metal"
+    ]
+  },
+  "51": {
+    "z": 51,
+    "n": 71,
+    "name": "antimony",
+    "symbol": "Sb",
+    "mass": 121.76,
+    "period": 5,
+    "group": 15,
+    "electronegativity": 2.05,
+    "radius": 1.5,
+    "types": [
+      "metalloid"
+    ]
+  },
+  "52": {
+    "z": 52,
+    "n": 76,
+    "name": "tellurium",
+    "symbol": "Te",
+    "mass": 127.6,
+    "period": 5,
+    "group": 16,
+    "electronegativity": 2.1,
+    "radius": 1.4,
+    "types": [
+      "metalloid"
+    ]
+  },
+  "53": {
+    "z": 53,
+    "n": 74,
+    "name": "iodine",
+    "symbol": "I",
+    "mass": 126.904,
+    "period": 5,
+    "group": 17,
+    "electronegativity": 2.66,
+    "radius": 1.3,
+    "types": [
+      "halogen"
+    ]
+  },
+  "54": {
+    "z": 54,
+    "n": 77,
+    "name": "xenon",
+    "symbol": "Xe",
+    "mass": 131.293,
+    "period": 5,
+    "group": 18,
+    "electronegativity": null,
+    "radius": 1.2,
+    "types": [
+      "noble_gas"
+    ]
+  },
+  "55": {
+    "z": 55,
+    "n": 78,
+    "name": "cesium",
+    "symbol": "Cs",
+    "mass": 132.905,
+    "period": 6,
+    "group": 1,
+    "electronegativity": 0.79,
+    "radius": 3.3,
+    "types": [
+      "alkali",
+      "metal"
+    ]
+  },
+  "56": {
+    "z": 56,
+    "n": 81,
+    "name": "barium",
+    "symbol": "Ba",
+    "mass": 137.327,
+    "period": 6,
+    "group": 2,
+    "electronegativity": 0.89,
+    "radius": 2.8,
+    "types": [
+      "alkaline_earth",
+      "metal"
+    ]
+  },
+  "57": {
+    "z": 57,
+    "n": 82,
+    "name": "lanthanum",
+    "symbol": "La",
+    "mass": 138.905,
+    "period": 6,
+    "group": 3,
+    "electronegativity": 1.1,
+    "radius": 2.7,
+    "types": [
+      "lanthanide",
+      "metal"
+    ]
+  },
+  "58": {
+    "z": 58,
+    "n": 82,
+    "name": "cerium",
+    "symbol": "Ce",
+    "mass": 140.116,
+    "period": 6,
+    "group": null,
+    "electronegativity": 1.12,
+    "radius": 2.7,
+    "types": [
+      "lanthanide",
+      "metal"
+    ]
+  },
+  "59": {
+    "z": 59,
+    "n": 82,
+    "name": "praseodymium",
+    "symbol": "Pr",
+    "mass": 140.908,
+    "period": 6,
+    "group": null,
+    "electronegativity": 1.13,
+    "radius": 2.7,
+    "types": [
+      "lanthanide",
+      "metal"
+    ]
+  },
+  "60": {
+    "z": 60,
+    "n": 84,
+    "name": "neodymium",
+    "symbol": "Nd",
+    "mass": 144.242,
+    "period": 6,
+    "group": null,
+    "electronegativity": 1.14,
+    "radius": 2.6,
+    "types": [
+      "lanthanide",
+      "metal"
+    ]
+  },
+  "61": {
+    "z": 61,
+    "n": 84,
+    "name": "promethium",
+    "symbol": "Pm",
+    "mass": 145.0,
+    "period": 6,
+    "group": null,
+    "electronegativity": 1.13,
+    "radius": 2.6,
+    "types": [
+      "lanthanide",
+      "metal"
+    ]
+  },
+  "62": {
+    "z": 62,
+    "n": 88,
+    "name": "samarium",
+    "symbol": "Sm",
+    "mass": 150.36,
+    "period": 6,
+    "group": null,
+    "electronegativity": 1.17,
+    "radius": 2.6,
+    "types": [
+      "lanthanide",
+      "metal"
+    ]
+  },
+  "63": {
+    "z": 63,
+    "n": 89,
+    "name": "europium",
+    "symbol": "Eu",
+    "mass": 151.964,
+    "period": 6,
+    "group": null,
+    "electronegativity": 1.2,
+    "radius": 2.6,
+    "types": [
+      "lanthanide",
+      "metal"
+    ]
+  },
+  "64": {
+    "z": 64,
+    "n": 93,
+    "name": "gadolinium",
+    "symbol": "Gd",
+    "mass": 157.25,
+    "period": 6,
+    "group": null,
+    "electronegativity": 1.2,
+    "radius": 2.5,
+    "types": [
+      "lanthanide",
+      "metal"
+    ]
+  },
+  "65": {
+    "z": 65,
+    "n": 94,
+    "name": "terbium",
+    "symbol": "Tb",
+    "mass": 158.925,
+    "period": 6,
+    "group": null,
+    "electronegativity": 1.2,
+    "radius": 2.5,
+    "types": [
+      "lanthanide",
+      "metal"
+    ]
+  },
+  "66": {
+    "z": 66,
+    "n": 97,
+    "name": "dysprosium",
+    "symbol": "Dy",
+    "mass": 162.5,
+    "period": 6,
+    "group": null,
+    "electronegativity": 1.22,
+    "radius": 2.5,
+    "types": [
+      "lanthanide",
+      "metal"
+    ]
+  },
+  "67": {
+    "z": 67,
+    "n": 98,
+    "name": "holmium",
+    "symbol": "Ho",
+    "mass": 164.93,
+    "period": 6,
+    "group": null,
+    "electronegativity": 1.23,
+    "radius": 2.5,
+    "types": [
+      "lanthanide",
+      "metal"
+    ]
+  },
+  "68": {
+    "z": 68,
+    "n": 99,
+    "name": "erbium",
+    "symbol": "Er",
+    "mass": 167.259,
+    "period": 6,
+    "group": null,
+    "electronegativity": 1.24,
+    "radius": 2.5,
+    "types": [
+      "lanthanide",
+      "metal"
+    ]
+  },
+  "69": {
+    "z": 69,
+    "n": 100,
+    "name": "thulium",
+    "symbol": "Tm",
+    "mass": 168.934,
+    "period": 6,
+    "group": null,
+    "electronegativity": 1.25,
+    "radius": 2.4,
+    "types": [
+      "lanthanide",
+      "metal"
+    ]
+  },
+  "70": {
+    "z": 70,
+    "n": 103,
+    "name": "ytterbium",
+    "symbol": "Yb",
+    "mass": 173.054,
+    "period": 6,
+    "group": null,
+    "electronegativity": 1.1,
+    "radius": 2.4,
+    "types": [
+      "lanthanide",
+      "metal"
+    ]
+  },
+  "71": {
+    "z": 71,
+    "n": 104,
+    "name": "lutetium",
+    "symbol": "Lu",
+    "mass": 174.967,
+    "period": 6,
+    "group": null,
+    "electronegativity": 1.27,
+    "radius": 2.3,
+    "types": [
+      "lanthanide",
+      "metal"
+    ]
+  },
+  "72": {
+    "z": 72,
+    "n": 106,
+    "name": "hafnium",
+    "symbol": "Hf",
+    "mass": 178.49,
+    "period": 6,
+    "group": 4,
+    "electronegativity": 1.3,
+    "radius": 2.2,
+    "types": [
+      "transition",
+      "metal"
+    ]
+  },
+  "73": {
+    "z": 73,
+    "n": 108,
+    "name": "tantalum",
+    "symbol": "Ta",
+    "mass": 180.948,
+    "period": 6,
+    "group": 5,
+    "electronegativity": 1.5,
+    "radius": 2.1,
+    "types": [
+      "transition",
+      "metal"
+    ]
+  },
+  "74": {
+    "z": 74,
+    "n": 110,
+    "name": "tungsten",
+    "symbol": "W",
+    "mass": 183.84,
+    "period": 6,
+    "group": 6,
+    "electronegativity": 2.36,
+    "radius": 2.0,
+    "types": [
+      "transition",
+      "metal"
+    ]
+  },
+  "75": {
+    "z": 75,
+    "n": 111,
+    "name": "rhenium",
+    "symbol": "Re",
+    "mass": 186.207,
+    "period": 6,
+    "group": 7,
+    "electronegativity": 1.9,
+    "radius": 2.0,
+    "types": [
+      "transition",
+      "metal"
+    ]
+  },
+  "76": {
+    "z": 76,
+    "n": 114,
+    "name": "osmium",
+    "symbol": "Os",
+    "mass": 190.23,
+    "period": 6,
+    "group": 8,
+    "electronegativity": 2.2,
+    "radius": 1.9,
+    "types": [
+      "transition",
+      "metal"
+    ]
+  },
+  "77": {
+    "z": 77,
+    "n": 115,
+    "name": "iridium",
+    "symbol": "Ir",
+    "mass": 192.217,
+    "period": 6,
+    "group": 9,
+    "electronegativity": 2.2,
+    "radius": 1.9,
+    "types": [
+      "transition",
+      "metal"
+    ]
+  },
+  "78": {
+    "z": 78,
+    "n": 117,
+    "name": "platinum",
+    "symbol": "Pt",
+    "mass": 195.084,
+    "period": 6,
+    "group": 10,
+    "electronegativity": 2.28,
+    "radius": 1.8,
+    "types": [
+      "transition",
+      "metal"
+    ]
+  },
+  "79": {
+    "z": 79,
+    "n": 118,
+    "name": "gold",
+    "symbol": "Au",
+    "mass": 196.967,
+    "period": 6,
+    "group": 11,
+    "electronegativity": 2.54,
+    "radius": 1.8,
+    "types": [
+      "transition",
+      "metal"
+    ]
+  },
+  "80": {
+    "z": 80,
+    "n": 121,
+    "name": "mercury",
+    "symbol": "Hg",
+    "mass": 200.59,
+    "period": 6,
+    "group": 12,
+    "electronegativity": 2.0,
+    "radius": 1.8,
+    "types": [
+      "post_transition",
+      "metal"
+    ]
+  },
+  "81": {
+    "z": 81,
+    "n": 123,
+    "name": "thallium",
+    "symbol": "Tl",
+    "mass": 204.383,
+    "period": 6,
+    "group": 13,
+    "electronegativity": 2.04,
+    "radius": 2.1,
+    "types": [
+      "post_transition",
+      "metal"
+    ]
+  },
+  "82": {
+    "z": 82,
+    "n": 125,
+    "name": "lead",
+    "symbol": "Pb",
+    "mass": 207.2,
+    "period": 6,
+    "group": 14,
+    "electronegativity": 2.33,
+    "radius": 1.8,
+    "types": [
+      "post_transition",
+      "metal"
+    ]
+  },
+  "83": {
+    "z": 83,
+    "n": 126,
+    "name": "bismuth",
+    "symbol": "Bi",
+    "mass": 208.98,
+    "period": 6,
+    "group": 15,
+    "electronegativity": 2.02,
+    "radius": 1.6,
+    "types": [
+      "post_transition",
+      "metal"
+    ]
+  },
+  "84": {
+    "z": 84,
+    "n": 126,
+    "name": "polonium",
+    "symbol": "Po",
+    "mass": 210.0,
+    "period": 6,
+    "group": 16,
+    "electronegativity": 2.0,
+    "radius": 1.5,
+    "types": [
+      "metal"
+    ]
+  },
+  "85": {
+    "z": 85,
+    "n": 125,
+    "name": "astatine",
+    "symbol": "At",
+    "mass": 210.0,
+    "period": 6,
+    "group": 17,
+    "electronegativity": 2.2,
+    "radius": 1.4,
+    "types": [
+      "halogen"
+    ]
+  },
+  "86": {
+    "z": 86,
+    "n": 136,
+    "name": "radon",
+    "symbol": "Rn",
+    "mass": 222.0,
+    "period": 6,
+    "group": 18,
+    "electronegativity": null,
+    "radius": 1.3,
+    "types": [
+      "noble_gas"
+    ]
+  },
+  "87": {
+    "z": 87,
+    "n": 136,
+    "name": "francium",
+    "symbol": "Fr",
+    "mass": 223.0,
+    "period": 7,
+    "group": 1,
+    "electronegativity": 0.7,
+    "radius": null,
+    "types": [
+      "alkali",
+      "metal"
+    ]
+  },
+  "88": {
+    "z": 88,
+    "n": 138,
+    "name": "radium",
+    "symbol": "Ra",
+    "mass": 226.0,
+    "period": 7,
+    "group": 2,
+    "electronegativity": 0.9,
+    "radius": null,
+    "types": [
+      "alkaline_earth",
+      "metal"
+    ]
+  },
+  "89": {
+    "z": 89,
+    "n": 138,
+    "name": "actinium",
+    "symbol": "Ac",
+    "mass": 227.0,
+    "period": 7,
+    "group": 3,
+    "electronegativity": 1.1,
+    "radius": null,
+    "types": [
+      "actinide",
+      "metal"
+    ]
+  },
+  "90": {
+    "z": 90,
+    "n": 142,
+    "name": "thorium",
+    "symbol": "Th",
+    "mass": 232.038,
+    "period": 7,
+    "group": null,
+    "electronegativity": 1.3,
+    "radius": null,
+    "types": [
+      "actinide",
+      "metal"
+    ]
+  },
+  "91": {
+    "z": 91,
+    "n": 140,
+    "name": "protactinium",
+    "symbol": "Pa",
+    "mass": 231.036,
+    "period": 7,
+    "group": null,
+    "electronegativity": 1.5,
+    "radius": null,
+    "types": [
+      "actinide",
+      "metal"
+    ]
+  },
+  "92": {
+    "z": 92,
+    "n": 146,
+    "name": "uranium",
+    "symbol": "U",
+    "mass": 238.029,
+    "period": 7,
+    "group": null,
+    "electronegativity": 1.38,
+    "radius": null,
+    "types": [
+      "actinide",
+      "metal"
+    ]
+  },
+  "93": {
+    "z": 93,
+    "n": 144,
+    "name": "neptunium",
+    "symbol": "Np",
+    "mass": 237.0,
+    "period": 7,
+    "group": null,
+    "electronegativity": 1.36,
+    "radius": null,
+    "types": [
+      "actinide",
+      "metal"
+    ]
+  },
+  "94": {
+    "z": 94,
+    "n": 150,
+    "name": "plutonium",
+    "symbol": "Pu",
+    "mass": 244.0,
+    "period": 7,
+    "group": null,
+    "electronegativity": 1.28,
+    "radius": null,
+    "types": [
+      "actinide",
+      "metal"
+    ]
+  },
+  "95": {
+    "z": 95,
+    "n": 148,
+    "name": "americium",
+    "symbol": "Am",
+    "mass": 243.0,
+    "period": 7,
+    "group": null,
+    "electronegativity": 1.3,
+    "radius": null,
+    "types": [
+      "actinide",
+      "metal"
+    ]
+  },
+  "96": {
+    "z": 96,
+    "n": 151,
+    "name": "curium",
+    "symbol": "Cm",
+    "mass": 247.0,
+    "period": 7,
+    "group": null,
+    "electronegativity": 1.3,
+    "radius": null,
+    "types": [
+      "actinide",
+      "metal"
+    ]
+  },
+  "97": {
+    "z": 97,
+    "n": 150,
+    "name": "berkelium",
+    "symbol": "Bk",
+    "mass": 247.0,
+    "period": 7,
+    "group": null,
+    "electronegativity": 1.3,
+    "radius": null,
+    "types": [
+      "actinide",
+      "metal"
+    ]
+  },
+  "98": {
+    "z": 98,
+    "n": 153,
+    "name": "californium",
+    "symbol": "Cf",
+    "mass": 251.0,
+    "period": 7,
+    "group": null,
+    "electronegativity": 1.3,
+    "radius": null,
+    "types": [
+      "actinide",
+      "metal"
+    ]
+  },
+  "99": {
+    "z": 99,
+    "n": 153,
+    "name": "einsteinium",
+    "symbol": "Es",
+    "mass": 252.0,
+    "period": 7,
+    "group": null,
+    "electronegativity": 1.3,
+    "radius": null,
+    "types": [
+      "actinide",
+      "metal"
+    ]
+  },
+  "100": {
+    "z": 100,
+    "n": 157,
+    "name": "fermium",
+    "symbol": "Fm",
+    "mass": 257.0,
+    "period": 7,
+    "group": null,
+    "electronegativity": 1.3,
+    "radius": null,
+    "types": [
+      "actinide",
+      "metal"
+    ]
+  },
+  "101": {
+    "z": 101,
+    "n": 157,
+    "name": "mendelevium",
+    "symbol": "Md",
+    "mass": 258.0,
+    "period": 7,
+    "group": null,
+    "electronegativity": 1.3,
+    "radius": null,
+    "types": [
+      "actinide",
+      "metal"
+    ]
+  },
+  "102": {
+    "z": 102,
+    "n": 157,
+    "name": "nobelium",
+    "symbol": "No",
+    "mass": 259.0,
+    "period": 7,
+    "group": null,
+    "electronegativity": 1.3,
+    "radius": null,
+    "types": [
+      "actinide",
+      "metal"
+    ]
+  },
+  "103": {
+    "z": 103,
+    "n": 159,
+    "name": "lawrencium",
+    "symbol": "Lr",
+    "mass": 262.0,
+    "period": 7,
+    "group": null,
+    "electronegativity": null,
+    "radius": null,
+    "types": [
+      "actinide",
+      "metal"
+    ]
+  },
+  "104": {
+    "z": 104,
+    "n": 157,
+    "name": "rutherfordium",
+    "symbol": "Rf",
+    "mass": 261.0,
+    "period": 7,
+    "group": 4,
+    "electronegativity": null,
+    "radius": null,
+    "types": [
+      "metal"
+    ]
+  },
+  "105": {
+    "z": 105,
+    "n": 157,
+    "name": "dubnium",
+    "symbol": "Db",
+    "mass": 262.0,
+    "period": 7,
+    "group": 5,
+    "electronegativity": null,
+    "radius": null,
+    "types": [
+      "metal"
+    ]
+  },
+  "106": {
+    "z": 106,
+    "n": 160,
+    "name": "seaborgium",
+    "symbol": "Sg",
+    "mass": 266.0,
+    "period": 7,
+    "group": 6,
+    "electronegativity": null,
+    "radius": null,
+    "types": [
+      "metal"
+    ]
+  },
+  "107": {
+    "z": 107,
+    "n": 157,
+    "name": "bohrium",
+    "symbol": "Bh",
+    "mass": 264.0,
+    "period": 7,
+    "group": 7,
+    "electronegativity": null,
+    "radius": null,
+    "types": [
+      "metal"
+    ]
+  },
+  "108": {
+    "z": 108,
+    "n": 159,
+    "name": "hassium",
+    "symbol": "Hs",
+    "mass": 267.0,
+    "period": 7,
+    "group": 8,
+    "electronegativity": null,
+    "radius": null,
+    "types": [
+      "metal"
+    ]
+  },
+  "109": {
+    "z": 109,
+    "n": 159,
+    "name": "meitnerium",
+    "symbol": "Mt",
+    "mass": 268.0,
+    "period": 7,
+    "group": 9,
+    "electronegativity": null,
+    "radius": null,
+    "types": [
+      "metal"
+    ]
+  },
+  "110": {
+    "z": 110,
+    "n": 161,
+    "name": "darmstadtium",
+    "symbol": "Ds",
+    "mass": 271.0,
+    "period": 7,
+    "group": 10,
+    "electronegativity": null,
+    "radius": null,
+    "types": [
+      "metal"
+    ]
+  },
+  "111": {
+    "z": 111,
+    "n": 161,
+    "name": "roentgenium",
+    "symbol": "Rg",
+    "mass": 272.0,
+    "period": 7,
+    "group": 11,
+    "electronegativity": null,
+    "radius": null,
+    "types": [
+      "metal"
+    ]
+  },
+  "112": {
+    "z": 112,
+    "n": 173,
+    "name": "copernicium",
+    "symbol": "Cn",
+    "mass": 285.0,
+    "period": 7,
+    "group": 12,
+    "electronegativity": null,
+    "radius": null,
+    "types": [
+      "post_transition",
+      "metal"
+    ]
+  },
+  "113": {
+    "z": 113,
+    "n": 171,
+    "name": "nihonium",
+    "symbol": "Nh",
+    "mass": 284.0,
+    "period": 7,
+    "group": 13,
+    "electronegativity": null,
+    "radius": null,
+    "types": [
+      "metal"
+    ]
+  },
+  "114": {
+    "z": 114,
+    "n": 175,
+    "name": "flerovium",
+    "symbol": "Fl",
+    "mass": 289.0,
+    "period": 7,
+    "group": 14,
+    "electronegativity": null,
+    "radius": null,
+    "types": [
+      "metal"
+    ]
+  },
+  "115": {
+    "z": 115,
+    "n": 173,
+    "name": "moscovium",
+    "symbol": "Mc",
+    "mass": 288.0,
+    "period": 7,
+    "group": 15,
+    "electronegativity": null,
+    "radius": null,
+    "types": [
+      "metal"
+    ]
+  },
+  "116": {
+    "z": 116,
+    "n": 176,
+    "name": "livermorium",
+    "symbol": "Lv",
+    "mass": 292.0,
+    "period": 7,
+    "group": 16,
+    "electronegativity": null,
+    "radius": null,
+    "types": [
+      "metal"
+    ]
+  },
+  "117": {
+    "z": 117,
+    "n": 178,
+    "name": "tennessine",
+    "symbol": "Ts",
+    "mass": 295.0,
+    "period": 7,
+    "group": 17,
+    "electronegativity": null,
+    "radius": null,
+    "types": null
+  },
+  "118": {
+    "z": 118,
+    "n": 176,
+    "name": "oganesson",
+    "symbol": "Og",
+    "mass": 294.0,
+    "period": 7,
+    "group": 18,
+    "electronegativity": null,
+    "radius": null,
+    "types": [
+      "noble_gas"
+    ]
+  }
+}

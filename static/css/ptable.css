@@ -50,8 +50,25 @@
     );
 }
 
+#ptable > div.highlight {
+    animation: appear 800ms;
+    animation-fill-mode: forwards;
+}
+
 #ptable > div.indicator {
     animation: blink 800ms infinite;
+}
+
+@keyframes appear {
+    from {
+        background-color: transparent;
+    }
+    45% {
+        background-color: lightgray;
+    }
+    to {
+        background-color: lightgray;
+    }
 }
 
 @keyframes blink {

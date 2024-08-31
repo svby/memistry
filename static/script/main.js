@@ -19,35 +19,7 @@ function splitRow(row) {
 }
 
 async function loadData() {
-    const response = await fetch("static/goodman.csv");
-    const raw = await response.text();
-
-    const lines = raw.split("\n");
-    const headers = splitRow(lines.shift());
-
-    const elements = [];
-    for (const line of lines) {
-        const split = splitRow(line);
-        if (split.length === 0) continue;
-
-        const item = {};
-        for (let i = 0; i < Math.min(headers.length, split.length); ++i) {
-            if (typeof split[i] === "undefined" || split[i] === "") item[headers[i]] = null;
-            else item[headers[i]] = split[i];
-        }
-
-        elements[parseInt(split[0])] = item;
-    }
-
-    return {
-        elements: elements,
-        zs: [...new Array(118).keys()].map(e => e + 1),
-        names: [...new Set(elements.map(e => e["Element"]).filter(e => e !== null))],
-        groups: [...new Set(elements.map(e => e["Group"]).filter(e => e !== null))],
-        periods: [...new Set(elements.map(e => e["Period"]).filter(e => e !== null))],
-        types: [...new Set(elements.map(e => e["Type"]).filter(e => e !== null))],
-        symbols: [...new Set(elements.map(e => e["Symbol"]).filter(e => e !== null))]
-    };
+    return await (await fetch("static/goodman.json")).json();
 }
 
 function generateMcChoices(options, answer) {
@@ -92,8 +64,9 @@ async function newQuestion(data) {
     switch (content.type) {
         case "mc": {
             const button = (option, index) => {
+                const text = option === null ? "N/A" : (content.mapper ? content.mapper(option) : option);
                 return `
-                    <a data-index="${index}">${option === null ? "N/A" : option}</a>
+                    <a data-index="${index}">${text}</a>
                 `;
             };
 
@@ -137,6 +110,13 @@ async function newQuestion(data) {
                     tpc.innerHTML = `${((globalTotalCorrect / globalTotal) * 100).toFixed(0)}%`;
 
                     const callbacks = [];
+                    if (content.group) {
+                        const highlighted = Object.values(data).map(e => e.z).filter(z => content.group.includes(z));
+                        for (const element of highlighted) cells[element].classList.add("highlight");
+                        callbacks.push(() => {
+                            for (const element of highlighted) cells[element].classList.remove("highlight");
+                        })
+                    }
                     if (content.element) {
                         cells[content.element].classList.add("indicator");
                         callbacks.push(() => {

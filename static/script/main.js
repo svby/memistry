@@ -1,8 +1,11 @@
 const
     pt = document.getElementById("ptable"),
-    nc = document.getElementById("stats-ncorrect"),
-    nt = document.getElementById("stats-ntotal"),
-    pc = document.getElementById("stats-pcorrect");
+    snc = document.getElementById("stats-session-ncorrect"),
+    snt = document.getElementById("stats-session-ntotal"),
+    spc = document.getElementById("stats-session-pcorrect"),
+    tnc = document.getElementById("stats-total-ncorrect"),
+    tnt = document.getElementById("stats-total-ntotal"),
+    tpc = document.getElementById("stats-total-pcorrect");
 
 let cells = [];
 
@@ -71,7 +74,7 @@ let correct = 0;
 let locked = false;
 
 async function newQuestion(data) {
-    index++;
+    ++index;
 
     const qn = document.getElementById("qnum");
     const qc = document.getElementById("qcontent");
@@ -107,20 +110,31 @@ async function newQuestion(data) {
                 button.addEventListener("click", () => {
                     if (locked) return;
                     locked = true;
+
+                    const globalTotal = (parseInt(localStorage.getItem("total")) || 0) + 1;
+                    let globalTotalCorrect = (parseInt(localStorage.getItem("totalCorrect")) || 0);
+
                     const correctIndex = choices.indexOf(content.answer);
                     if (parseInt(button.getAttribute("data-index")) === correctIndex) {
                         ++correct;
+                        ++globalTotalCorrect;
+
                         button.classList.add("correct");
                     } else {
                         button.classList.add("incorrect");
                         document.querySelector(`.qans > a[data-index='${correctIndex}']`).classList.add("correct");
                     }
 
-                    const percentage = (correct / index) * 100;
+                    localStorage.setItem("total", globalTotal.toString());
+                    localStorage.setItem("totalCorrect", globalTotalCorrect.toString());
 
-                    nc.innerHTML = correct.toString();
-                    nt.innerHTML = index.toString();
-                    pc.innerHTML = `${percentage.toFixed(2)}%`;
+                    snc.innerHTML = correct.toString();
+                    snt.innerHTML = index.toString();
+                    spc.innerHTML = `${((correct / index) * 100).toFixed(2)}%`;
+
+                    tnc.innerHTML = globalTotalCorrect.toString();
+                    tnt.innerHTML = globalTotal.toString();
+                    tpc.innerHTML = `${((globalTotalCorrect / globalTotal) * 100).toFixed(2)}%`;
 
                     const callbacks = [];
                     if (content.element) {
@@ -142,6 +156,13 @@ async function newQuestion(data) {
 }
 
 async function main() {
+    const globalTotal = parseInt(localStorage.getItem("total")) || 0;
+    const globalTotalCorrect = parseInt(localStorage.getItem("totalCorrect")) || 0;
+
+    tnc.innerHTML = globalTotalCorrect.toString();
+    tnt.innerHTML = globalTotal.toString();
+    tpc.innerHTML = `${((globalTotalCorrect / globalTotal) * 100).toFixed(2)}%`;
+
     const data = await loadData();
     console.log(data);
 

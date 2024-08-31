@@ -197,10 +197,27 @@ main.noscript {
 
 #stats {
     display: grid;
-    grid-column-gap: 20px;
-    grid-template-columns: max-content auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 5px;
+    grid-template-columns: repeat(2, minmax(160px, max-content));
 }
 
-#stats .header {
+#stats .content {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: auto auto;
+}
+
+#stats > .header {
+    font-variant: all-small-caps;
+    text-align: center;
+    color: gray;
+}
+
+#stats .content > .header {
     font-weight: bolder;
+}
+
+#stats .content > .header + * {
+    text-align: right;
 }

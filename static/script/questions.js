@@ -1,10 +1,14 @@
 function groupQuestion(options) {
     const element = _.sample(options.data.zs);
+    const text = _.sample([
+        `What group is the element <b>${options.data.elements[element]["Element"]}</b> a member of?`,
+        `What group is the element with the symbol <b>${options.data.elements[element]["Symbol"]}</b> a member of?`
+    ]);
 
     return {
         type: "mc",
         element,
-        text: `What group is the element <b>${options.data.elements[element]["Element"]}</b> a member of?`,
+        text,
         options: options.data.groups,
         answer: options.data.elements[element]["Group"]
     };
@@ -12,11 +16,15 @@ function groupQuestion(options) {
 
 function periodQuestion(options) {
     const element = _.sample(options.data.zs);
+    const text = _.sample([
+        `What period is the element <b>${options.data.elements[element]["Element"]}</b> a member of?`,
+        `What period is the element with the symbol <b>${options.data.elements[element]["Symbol"]}</b> a member of?`
+    ]);
 
     return {
         type: "mc",
         element,
-        text: `What period is the element <b>${options.data.elements[element]["Element"]}</b> a member of?`,
+        text,
         options: options.data.periods,
         answer: options.data.elements[element]["Period"]
     };
@@ -24,11 +32,15 @@ function periodQuestion(options) {
 
 function typeQuestion(options) {
     const element = _.sample(options.data.zs);
+    const text = _.sample([
+        `What series is the element <b>${options.data.elements[element]["Element"]}</b> a member of?`,
+        `What series is the element with the symbol <b>${options.data.elements[element]["Symbol"]}</b> a member of?`
+    ]);
 
     return {
         type: "mc",
         element,
-        text: `What series is the element <b>${options.data.elements[element]["Element"]}</b> a member of?`,
+        text,
         options: options.data.types,
         answer: options.data.elements[element]["Type"]
     };
@@ -38,8 +50,11 @@ function zQuestion(options) {
     const element = _.sample(options.data.zs);
     const text = _.sample([
         `How many protons are present in an atom of <b>${options.data.elements[element]["Element"]}</b>?`,
+        `How many protons are present in an atom of <b>${options.data.elements[element]["Symbol"]}</b>?`,
         `How many electrons are present in an atom of <b>${options.data.elements[element]["Element"]}</b>?`,
-        `What is the atomic number of the element <b>${options.data.elements[element]["Element"]}</b>?`
+        `How many electrons are present in an atom of <b>${options.data.elements[element]["Symbol"]}</b>?`,
+        `What is the atomic number of the element <b>${options.data.elements[element]["Element"]}</b>?`,
+        `What is the atomic number of the element with the symbol <b>${options.data.elements[element]["Symbol"]}</b>?`
     ]);
 
     return {

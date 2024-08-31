@@ -1,5 +1,6 @@
 function groupQuestion(options) {
-    const element = _.sample(options.data.zs);
+    // TODO: possibly distribute N/A answers randomly so that we don't have to fully ignore lanthanides/actinides
+    const element = _.sample(options.data.zs.filter(z => options.data.elements[z]["Group"] !== null));
     const text = _.sample([
         `What group is the element <b>${options.data.elements[element]["Element"]}</b> a member of?`,
         `What group is the element with the symbol <b>${options.data.elements[element]["Symbol"]}</b> a member of?`

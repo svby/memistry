@@ -31,7 +31,7 @@ function periodQuestion(options) {
 }
 
 function typeQuestion(options) {
-    const element = _.sample(options.data.zs);
+    const element = _.sample(options.data.zs.filter(z => options.data.elements[z]["Type"] !== "Metal"));
     const text = _.sample([
         `What series is the element <b>${options.data.elements[element]["Element"]}</b> a member of?`,
         `What series is the element with the symbol <b>${options.data.elements[element]["Symbol"]}</b> a member of?`
@@ -41,7 +41,7 @@ function typeQuestion(options) {
         type: "mc",
         element,
         text,
-        options: options.data.types,
+        options: options.data.types.filter(t => t !== "Metal"),
         answer: options.data.elements[element]["Type"]
     };
 }
